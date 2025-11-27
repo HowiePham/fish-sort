@@ -1,0 +1,16 @@
+{
+    "name": "Mimi.VisualActions.Attribute.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Mimi.VisualActions.Attribute"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

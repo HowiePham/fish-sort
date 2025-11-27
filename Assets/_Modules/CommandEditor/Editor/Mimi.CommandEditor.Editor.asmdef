@@ -1,0 +1,4 @@
+﻿{
+  "name": "Mimi.CommandEditor.Editor",
+  "references":[ "Mimi.CommandEditor" ]
+}

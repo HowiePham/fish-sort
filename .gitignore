@@ -4,3 +4,5 @@ FishSort.sln
 Temp
 Logs
 Library
+obj
+*.csproj
