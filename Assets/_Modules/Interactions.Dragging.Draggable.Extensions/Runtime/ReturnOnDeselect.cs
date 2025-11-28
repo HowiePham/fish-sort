@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using Mimi.Interactions.Dragging;
 using Mimi.Interactions.Dragging.DraggableExtensions;
 using Mimi.VisualActions.Attribute;
@@ -11,10 +12,12 @@ namespace Mimi.VisualActions.Interactions.Draggable.Extensions
     [TypeInfoBox("Return Draggable to start position when release finger")]
     public class ReturnOnDeselect : MonoDraggableExtension
     {
-        [HideInBehaviourEditor]
-        [SerializeField] private Transform startPosition;
-        [HideInBehaviourEditor]
-        [SerializeField] private Vector3Field offsetField;
+        [HideInBehaviourEditor] [SerializeField]
+        private Transform startPosition;
+
+        [HideInBehaviourEditor] [SerializeField]
+        private Vector3Field offsetField;
+
         [SerializeField] private float delaySeconds;
 
         public override void Init(BaseDraggable draggable)
@@ -32,12 +35,10 @@ namespace Mimi.VisualActions.Interactions.Draggable.Extensions
 
         public override void StartDrag()
         {
-            
         }
 
         public override void Drag()
         {
-            
         }
 
         public override void EndDrag()
@@ -48,7 +49,7 @@ namespace Mimi.VisualActions.Interactions.Draggable.Extensions
         async UniTask ReturnPos(BaseDraggable draggable)
         {
             await UniTask.Delay(Mathf.RoundToInt(delaySeconds * 1000));
-            draggable.SetPosition(startPosition.position-offsetField.GetValue());
+            draggable.SetPosition(startPosition.position - offsetField.GetValue());
         }
     }
 }
