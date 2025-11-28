@@ -1,0 +1,1319 @@
+fileFormatVersion: 2
+guid: a194d2a8ebebabf43a32d746b563cbae
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 60943d04f618da5408f987e68b976439
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: angry-max
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1259
+      y: 3267
+      width: 88
+      height: 252
+    spriteID: 7d9b99df713bd744994519c667af3061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1257, y: 3266}
+    spritePosition: {x: 950, y: 1810}
+  - name: angry-min
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2057
+      y: 3554
+      width: 88
+      height: 252
+    spriteID: f101d8d83af76cb43a45db9754f2e0f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2055, y: 3553}
+    spritePosition: {x: 950, y: 1810}
+  - name: "H\xE3y gi\xFAp ng\u01B0\u1EDDi v\u1EE3  h\u1EBFt t\u1EE9c gi\u1EADn"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 2352
+      width: 881
+      height: 239
+    spriteID: 3fbc53c34892d414fb57f89828f56ebb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 2352}
+    spritePosition: {x: 86, y: 1943}
+  - name: cot-dien-p
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1684
+      y: 3554
+      width: 196
+      height: 429
+    spriteID: e865ae92af36dbf479c86acd5ee8abed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1684, y: 3554}
+    spritePosition: {x: 736, y: 931}
+  - name: MA-NU-p
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3602
+      width: 160
+      height: 260
+    spriteID: c9a419f287b546149ae63898962d7595
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 3602}
+    spritePosition: {x: 633, y: 1039}
+  - name: tree-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1684
+      y: 3067
+      width: 305
+      height: 479
+    spriteID: 58844c2e537740a42a3922fc4c97bb59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1684, y: 3067}
+    spritePosition: {x: 680, y: 938}
+  - name: nguoi-giao-hang
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 2599
+      width: 292
+      height: 596
+    spriteID: 30898060475df7940ba29e647a84e3fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 2599}
+    spritePosition: {x: 755, y: 688}
+  - name: VK-PUNCH
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 577
+      y: 3489
+      width: 351
+      height: 588
+    spriteID: 00056cac9e2fffa4aaaf86ffda6f599e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 577, y: 3489}
+    spritePosition: {x: 491, y: 694}
+  - name: punch-fx
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3203
+      width: 219
+      height: 230
+    spriteID: dc6cb160405ab9d4da13e7ac28307550
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1382, y: 3202}
+    spritePosition: {x: 734, y: 1019}
+  - name: VK-ANGRY
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 2599
+      width: 284
+      height: 660
+    spriteID: 86a3e785f13d54e4bbf24249af149bea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 2599}
+    spritePosition: {x: 430, y: 695}
+  - name: DIEN-THOAI-TRONG TUI
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2110
+      y: 3976
+      width: 39
+      height: 42
+    spriteID: b948b23fb4702d14eb7f53425e3fbb86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2110, y: 3976}
+    spritePosition: {x: 887, y: 840}
+  - name: DIEN-THOAI
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1614
+      y: 3870
+      width: 50
+      height: 55
+    spriteID: 5354966ca59ba78489664080727aee1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1614, y: 3870}
+    spritePosition: {x: 876, y: 827}
+  - name: CK
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1684
+      y: 2599
+      width: 366
+      height: 460
+    spriteID: 3b83f73939651a7419df3b43b85a1642
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1684, y: 2599}
+    spritePosition: {x: 653, y: 725}
+  - name: cua
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2180
+      y: 4
+      width: 83
+      height: 974
+    spriteID: 8b316f66caf237b4b9f4369cafb2309c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2180, y: 4}
+    spritePosition: {x: 997, y: 657}
+  - name: MA-NU-TRONG-TV
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1259
+      y: 3527
+      width: 117
+      height: 140
+    spriteID: 4e9a68b231f925e4bbbf081e2d946280
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1259, y: 3527}
+    spritePosition: {x: 462, y: 1355}
+  - name: TV-ON
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3441
+      width: 287
+      height: 153
+    spriteID: 11fc22e126efa7c4e8e7db26f6ab4fc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 3441}
+    spritePosition: {x: 457, y: 1355}
+  - name: TV
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3883
+      width: 326
+      height: 185
+    spriteID: 9a9583c70db7b914892ae0910a30e50e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3883}
+    spritePosition: {x: 437, y: 1339}
+  - name: Layer 24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2057
+      y: 3814
+      width: 91
+      height: 114
+    spriteID: 4a086de18c8945548aea98973a985cdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2057, y: 3814}
+    spritePosition: {x: 792, y: 1170}
+  - name: Layer 22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1981
+      y: 2352
+      width: 140
+      height: 156
+    spriteID: 23bd1c10d58f9674bbf08e700a042c35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1981, y: 2352}
+    spritePosition: {x: 44, y: 696}
+  - name: NAP-TRAN
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3870
+      width: 222
+      height: 99
+    spriteID: b510b190d8282e84cbca19df4b063f5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 3870}
+    spritePosition: {x: 750, y: 1640}
+  - name: GIAN
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1552
+      y: 3715
+      width: 86
+      height: 106
+    spriteID: 11e813a64163cdb4fa809e4d5fef8403
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1552, y: 3715}
+    spritePosition: {x: 866, y: 1608}
+  - name: CUA-SO-canh1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1259
+      y: 3685
+      width: 115
+      height: 371
+    spriteID: 8a9c96124a6e3b448894dba43005f5cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1259, y: 3685}
+    spritePosition: {x: 161, y: 1202}
+  - name: CUA-SO-CANH2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2058
+      y: 2599
+      width: 56
+      height: 414
+    spriteID: 5007bc8bc1806f348b0c132c2787ef71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2058, y: 2599}
+    spritePosition: {x: 0, y: 1170}
+  - name: CUA-SO-dong
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1997
+      y: 3067
+      width: 161
+      height: 414
+    spriteID: eb47c419bb7c30d4585207dd9f4e99fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1997, y: 3067}
+    spritePosition: {x: 0, y: 1170}
+  - name: khung cua so
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1888
+      y: 3554
+      width: 161
+      height: 414
+    spriteID: dbfbd0b0602c0a549a45c8dd044d0047
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1888, y: 3554}
+    spritePosition: {x: 0, y: 1170}
+  - name: cot-dien
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1552
+      y: 3602
+      width: 92
+      height: 105
+    spriteID: 2e859ffb7373239489ab6db336a1bb33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1552, y: 3602}
+    spritePosition: {x: 67, y: 1234}
+  - name: tree
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 3685
+      width: 159
+      height: 406
+    spriteID: 80ae7b90d7e069843844ee0ddf4bbb3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 3685}
+    spritePosition: {x: 0, y: 1173}
+  - name: CUA-SO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 3267
+      width: 159
+      height: 410
+    spriteID: ab3fc6b131ac24346a9974b78786dd79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 3267}
+    spritePosition: {x: 0, y: 1172}
+  - name: goi2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1888
+      y: 3976
+      width: 214
+      height: 104
+    spriteID: 0a3a521423e35de48bd38ca1f23e6a52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1888, y: 3976}
+    spritePosition: {x: 267, y: 1169}
+  - name: giuong
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3489
+      width: 565
+      height: 386
+    spriteID: ebaabcf26275ed346bd9d6a3992b29a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3489}
+    spritePosition: {x: 0, y: 903}
+  - name: AN-TROM
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 338
+      y: 3883
+      width: 206
+      height: 130
+    spriteID: 9d853d4d3edbe944da18fdbdced3cad9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 338, y: 3883}
+    spritePosition: {x: 24, y: 861}
+  - name: bg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2352
+      width: 1080
+      height: 1129
+    spriteID: 1178f4ebcff0c2040afd493d6b828b25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2352}
+    spritePosition: {x: 0, y: 657}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1080
+      height: 2340
+    spriteID: c97d5fcd12268dc41a402e0e2405db29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: nen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 4
+      width: 1080
+      height: 2340
+    spriteID: 3b2adddb3c628514685e02e2342cf5d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 1
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: angry-max
+    spriteName: angry-max
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d9b99df713bd744994519c667af3061
+    layerID: 222
+    mosaicPosition: {x: 1259, y: 3267}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: angry-min
+    spriteName: angry-min
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f101d8d83af76cb43a45db9754f2e0f7
+    layerID: 221
+    mosaicPosition: {x: 2057, y: 3554}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "H\xE3y gi\xFAp ng\u01B0\u1EDDi v\u1EE3  h\u1EBFt t\u1EE9c gi\u1EADn"
+    spriteName: "H\xE3y gi\xFAp ng\u01B0\u1EDDi v\u1EE3  h\u1EBFt t\u1EE9c gi\u1EADn"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3fbc53c34892d414fb57f89828f56ebb
+    layerID: 218
+    mosaicPosition: {x: 1092, y: 2352}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: frame
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 5a4f76bc4f5a774418fc3c8ef0e40338
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: punch
+    spriteName: 
+    isGroup: 1
+    parentIndex: 3
+    spriteID: 9c2b736826f03484cb311c4ea3428beb
+    layerID: 124
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: cot-dien-p
+    spriteName: cot-dien-p
+    isGroup: 0
+    parentIndex: 4
+    spriteID: e865ae92af36dbf479c86acd5ee8abed
+    layerID: 225
+    mosaicPosition: {x: 1684, y: 3554}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MA-NU-p
+    spriteName: MA-NU-p
+    isGroup: 0
+    parentIndex: 4
+    spriteID: c9a419f287b546149ae63898962d7595
+    layerID: 130
+    mosaicPosition: {x: 1384, y: 3602}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tree-2
+    spriteName: tree-2
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 58844c2e537740a42a3922fc4c97bb59
+    layerID: 104
+    mosaicPosition: {x: 1684, y: 3067}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: nguoi-giao-hang
+    spriteName: nguoi-giao-hang
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 30898060475df7940ba29e647a84e3fc
+    layerID: 177
+    mosaicPosition: {x: 1384, y: 2599}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: VK-PUNCH
+    spriteName: VK-PUNCH
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 00056cac9e2fffa4aaaf86ffda6f599e
+    layerID: 216
+    mosaicPosition: {x: 577, y: 3489}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: punch-fx
+    spriteName: punch-fx
+    isGroup: 0
+    parentIndex: 3
+    spriteID: dc6cb160405ab9d4da13e7ac28307550
+    layerID: 246
+    mosaicPosition: {x: 1384, y: 3203}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: VK-ANGRY
+    spriteName: VK-ANGRY
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 86a3e785f13d54e4bbf24249af149bea
+    layerID: 202
+    mosaicPosition: {x: 1092, y: 2599}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DIEN-THOAI-TRONG TUI
+    spriteName: DIEN-THOAI-TRONG TUI
+    isGroup: 0
+    parentIndex: 3
+    spriteID: b948b23fb4702d14eb7f53425e3fbb86
+    layerID: 309
+    mosaicPosition: {x: 2110, y: 3976}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DIEN-THOAI
+    spriteName: DIEN-THOAI
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 5354966ca59ba78489664080727aee1c
+    layerID: 241
+    mosaicPosition: {x: 1614, y: 3870}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: CK
+    spriteName: CK
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 3b83f73939651a7419df3b43b85a1642
+    layerID: 197
+    mosaicPosition: {x: 1684, y: 2599}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cua
+    spriteName: cua
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 8b316f66caf237b4b9f4369cafb2309c
+    layerID: 305
+    mosaicPosition: {x: 2180, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MA-NU-TRONG-TV
+    spriteName: MA-NU-TRONG-TV
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 4e9a68b231f925e4bbbf081e2d946280
+    layerID: 306
+    mosaicPosition: {x: 1259, y: 3527}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TV-ON
+    spriteName: TV-ON
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 11fc22e126efa7c4e8e7db26f6ab4fc4
+    layerID: 157
+    mosaicPosition: {x: 1384, y: 3441}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TV
+    spriteName: TV
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 9a9583c70db7b914892ae0910a30e50e
+    layerID: 127
+    mosaicPosition: {x: 4, y: 3883}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 24
+    spriteName: Layer 24
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 4a086de18c8945548aea98973a985cdb
+    layerID: 123
+    mosaicPosition: {x: 2057, y: 3814}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 22
+    spriteName: Layer 22
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 23bd1c10d58f9674bbf08e700a042c35
+    layerID: 97
+    mosaicPosition: {x: 1981, y: 2352}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NAP-TRAN
+    spriteName: NAP-TRAN
+    isGroup: 0
+    parentIndex: 3
+    spriteID: b510b190d8282e84cbca19df4b063f5b
+    layerID: 108
+    mosaicPosition: {x: 1384, y: 3870}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GIAN
+    spriteName: GIAN
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 11e813a64163cdb4fa809e4d5fef8403
+    layerID: 113
+    mosaicPosition: {x: 1552, y: 3715}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: trang-thai-cua-so
+    spriteName: 
+    isGroup: 1
+    parentIndex: 3
+    spriteID: b2ac5478e3714e9409891e67b0123b0a
+    layerID: 95
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: CUA-SO-canh1
+    spriteName: CUA-SO-canh1
+    isGroup: 0
+    parentIndex: 23
+    spriteID: 8a9c96124a6e3b448894dba43005f5cd
+    layerID: 91
+    mosaicPosition: {x: 1259, y: 3685}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: CUA-SO-CANH2
+    spriteName: CUA-SO-CANH2
+    isGroup: 0
+    parentIndex: 23
+    spriteID: 5007bc8bc1806f348b0c132c2787ef71
+    layerID: 92
+    mosaicPosition: {x: 2058, y: 2599}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: CUA-SO-dong
+    spriteName: CUA-SO-dong
+    isGroup: 0
+    parentIndex: 23
+    spriteID: eb47c419bb7c30d4585207dd9f4e99fa
+    layerID: 87
+    mosaicPosition: {x: 1997, y: 3067}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: khung cua so
+    spriteName: khung cua so
+    isGroup: 0
+    parentIndex: 23
+    spriteID: dbfbd0b0602c0a549a45c8dd044d0047
+    layerID: 89
+    mosaicPosition: {x: 1888, y: 3554}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cot-dien
+    spriteName: cot-dien
+    isGroup: 0
+    parentIndex: 23
+    spriteID: 2e859ffb7373239489ab6db336a1bb33
+    layerID: 307
+    mosaicPosition: {x: 1552, y: 3602}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tree
+    spriteName: tree
+    isGroup: 0
+    parentIndex: 23
+    spriteID: 80ae7b90d7e069843844ee0ddf4bbb3a
+    layerID: 308
+    mosaicPosition: {x: 1092, y: 3685}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CUA-SO
+    spriteName: CUA-SO
+    isGroup: 0
+    parentIndex: 3
+    spriteID: ab3fc6b131ac24346a9974b78786dd79
+    layerID: 226
+    mosaicPosition: {x: 1092, y: 3267}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: goi2
+    spriteName: goi2
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 0a3a521423e35de48bd38ca1f23e6a52
+    layerID: 73
+    mosaicPosition: {x: 1888, y: 3976}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: giuong
+    spriteName: giuong
+    isGroup: 0
+    parentIndex: 3
+    spriteID: ebaabcf26275ed346bd9d6a3992b29a9
+    layerID: 224
+    mosaicPosition: {x: 4, y: 3489}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AN-TROM
+    spriteName: AN-TROM
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 9d853d4d3edbe944da18fdbdced3cad9
+    layerID: 171
+    mosaicPosition: {x: 338, y: 3883}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: bg
+    spriteName: bg
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 1178f4ebcff0c2040afd493d6b828b25
+    layerID: 276
+    mosaicPosition: {x: 4, y: 2352}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: 3
+    spriteID: c97d5fcd12268dc41a402e0e2405db29
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: nen
+    spriteName: nen
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3b2adddb3c628514685e02e2342cf5d2
+    layerID: 245
+    mosaicPosition: {x: 1092, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
