@@ -24,9 +24,12 @@
         "Mimi.CommandEditor",
         "Mimi.VisualActions.GameObjects",
         "Mimi.Audio.Core",
-        "Mimi.EffectMaker.Core"
+        "Mimi.EffectMaker.Core",
+        "Mimi.Actor.Core"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

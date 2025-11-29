@@ -17,7 +17,7 @@ namespace Mimi.EffectMaker.Dotween
         private int vibrato = 10;
         [SerializeField]
         private bool isFadeOut = true;
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             return new ShakeRotationTweenEffect(targeTransform, strength, duration, vibrato, isFadeOut);
         }

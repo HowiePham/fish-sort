@@ -24,9 +24,12 @@
         "Mimi.VisualActions.Transform",
         "Mimi.VisualActions.BookFlip",
         "VisualActions.Audio",
-        "Mimi.VisualActions.Shaking"
+        "Mimi.VisualActions.Shaking",
+        "Mimi.Actor.Core"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

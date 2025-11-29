@@ -2,7 +2,8 @@
     "name": "Mimi.Actor.Graphic.SpriteRenderer",
     "rootNamespace": "",
     "references": [
-        "Actor.Graphic.Core"
+        "Actor.Graphic.Core",
+        "Mimi.Actor.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

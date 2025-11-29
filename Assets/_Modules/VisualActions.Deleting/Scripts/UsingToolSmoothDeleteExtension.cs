@@ -1,4 +1,6 @@
-﻿using Mimi.Debugging.UnityGizmos;
+﻿#if UNITY_EDITOR
+using Mimi.Debugging.UnityGizmos;
+#endif
 using Mimi.Interactions.Dragging;
 using Mimi.VisualActions.Attribute;
 using Sirenix.OdinInspector;

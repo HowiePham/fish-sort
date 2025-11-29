@@ -4,13 +4,17 @@
     "references": [
         "Mimi.EffectMaker.Core",
         "Mimi.VisualActions.Attribute",
-        "Actor.Graphic.Core"
+        "Actor.Graphic.Core",
+        "Mimi.Actor.Core",
+        "DOTween.Modules"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
-    "precompiledReferences": [],
+    "precompiledReferences": [
+        "DOTween.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

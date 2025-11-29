@@ -4,7 +4,8 @@
     "references": [
         "Actor.Graphic.Core",
         "Mimi.VisualActions.Core",
-        "UniTask"
+        "UniTask",
+        "Mimi.Actor.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -6,7 +6,7 @@ namespace Mimi.EffectMaker.Core
     public class MonoSequenceEffectMaker : MonoEffectMaker
     {
         [SerializeField] private MonoEffectMaker[] effects;
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             var interfaceEffects = effects.Where(e => e != null).Cast<IEffectMaker>().ToArray();
 

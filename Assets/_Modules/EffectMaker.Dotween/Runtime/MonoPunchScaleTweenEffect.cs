@@ -18,7 +18,7 @@ namespace Mimi.EffectMaker.Dotween
         private Ease ease;
 
 
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             return new PunchScaleTweenEffect(target, strength, duration, ease);
         }

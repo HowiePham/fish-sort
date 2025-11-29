@@ -1448,7 +1448,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c1f7a15a95b46bb4592754bdcc6fbaa3, type: 2}
+  - {fileID: 2100000, guid: cb6fbaefe952f914f8de1e1f597330c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2305,7 +2305,7 @@ SpriteRenderer:
   m_Size: {x: 2.12, y: 4.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1954475655
@@ -2488,8 +2488,6 @@ MonoBehaviour:
   speedScalar: 2
   positionProcessor: {fileID: 0}
   draggableExtension: {fileID: 0}
-  graphic: {fileID: 0}
-  movement: {fileID: 0}
   selectable: {fileID: 2000157723}
   renderCamera: {fileID: 0}
 --- !u!114 &2000157723
@@ -2537,7 +2535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {fileID: 737552527}
-  offsetField: {fileID: 0}
   delaySeconds: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

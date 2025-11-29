@@ -1,11 +1,7 @@
 using Mimi.Actor.Graphic.Core;
-using Mimi.Actor.Graphic.SpriteRenderer;
 using Mimi.VisualActions.Attribute;
-using Mimi.VisualActions.Attribute.Editor;
-using Mimi.VisualActions.Sprites.Editor;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class TestActorGraphic : MonoBehaviour
 {

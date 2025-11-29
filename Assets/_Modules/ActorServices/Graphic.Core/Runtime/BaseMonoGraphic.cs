@@ -1,9 +1,10 @@
 ﻿using System;
+using Mimi.Actor.Core;
 using UnityEngine;
 
 namespace Mimi.Actor.Graphic.Core
 {
-    public abstract class BaseMonoGraphic : MonoBehaviour, IGraphic
+    public abstract class BaseMonoGraphic : MonoActorAspect, IGraphic
     {
         public int SortingOrder => WrapperGraphic.SortingOrder;
         public string SortingLayerName => WrapperGraphic.SortingLayerName;
@@ -53,6 +54,16 @@ namespace Mimi.Actor.Graphic.Core
         public void SetAlpha(float alpha)
         {
             WrapperGraphic.SetAlpha(alpha);
+        }
+
+        public override void Initialize()
+        {
+            wrapperGraphic =  CreateGraphic();
+        }
+
+        public override void Dispose()
+        {
+            
         }
     }
 }

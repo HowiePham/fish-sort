@@ -14,7 +14,7 @@ namespace Mimi.EffectMaker.Dotween
         private Vector3 maxValue;
         [SerializeField]
         private float duration = 0.3f;
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             return new RandomRotateTweenEffect(targetTransform, minValue, maxValue, duration);
         }

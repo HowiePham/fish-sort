@@ -54,8 +54,8 @@ namespace Mimi.EffectMaker.Core
             isInitalized = true;
         }
 
-        protected BaseEffectMaker wrapEffectMaker;
-        protected abstract BaseEffectMaker CreateEffectMaker();
+        protected IEffectMaker wrapEffectMaker;
+        protected abstract IEffectMaker CreateEffectMaker();
 
         public void StartEffect()
         {

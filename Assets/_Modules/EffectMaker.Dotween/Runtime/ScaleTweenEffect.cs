@@ -20,6 +20,7 @@ namespace Mimi.EffectMaker.Dotween
             this.targetScale = targetScale;
             this.duration = duration;
             this.ease = ease;
+           
         }
         
 

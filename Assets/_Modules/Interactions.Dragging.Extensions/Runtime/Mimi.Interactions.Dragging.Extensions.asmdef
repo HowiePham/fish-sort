@@ -13,7 +13,8 @@
         "Mimi.EffectMaker.Core",
         "Mimi.Services.ScriptableObjects.Audio",
         "Mimi.Services.ScriptableObjects.Core",
-        "Mimi.Audio.Core"
+        "Mimi.Audio.Core",
+        "Mimi.Actor.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "Actor.Graphic.Core",
-        "spine-unity"
+        "spine-unity",
+        "Mimi.Actor.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

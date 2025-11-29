@@ -18,7 +18,7 @@ namespace Mimi.EffectMaker.Dotween
         private float duration;
         [SerializeField]
         private Ease ease;
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             return new FadeGraphicTweenEffect(graphic,  startAlpha, endAlpha, duration, ease);
         }

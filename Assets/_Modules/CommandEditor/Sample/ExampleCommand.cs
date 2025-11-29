@@ -1,4 +1,5 @@
-﻿using Mimi.CommandEditor;
+﻿#if UNITY_EDITOR
+using Mimi.CommandEditor;
 using UnityEditor;
 using UnityEngine;
 
@@ -13,3 +14,4 @@ namespace VisualActions.CommandEditor.Sample
         public static void SpawnCube() => GameObject.CreatePrimitive(PrimitiveType.Cube);
     }
 }
+#endif

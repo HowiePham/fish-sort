@@ -1,7 +1,6 @@
 ﻿using Mimi.Interactions.Dragging;
 using Mimi.Interactions.Dragging.DraggableExtensions;
 using Mimi.VisualActions.Attribute;
-using Mimi.VisualActions.Sprites.Editor;
 using UnityEngine;
 
 namespace Mimi.VisualActions.Interactions.Draggable.Extensions

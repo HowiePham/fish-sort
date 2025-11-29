@@ -4,7 +4,9 @@
     "references": [
         "Mimi.VisualActions.Attribute"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

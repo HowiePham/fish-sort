@@ -13,7 +13,7 @@ namespace Mimi.EffectMaker.Dotween
       
         [SerializeField]
         private float duration = 0.3f;
-        protected override BaseEffectMaker CreateEffectMaker()
+        protected override IEffectMaker CreateEffectMaker()
         {
             return new RotateTweenEffect(targetTransform, targetRotation, duration);
         }

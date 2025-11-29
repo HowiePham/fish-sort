@@ -6,7 +6,8 @@
         "Mimi.ConditionValidator",
         "Actor.Graphic.Core",
         "Mimi.Actor.Movement.Core",
-        "Mimi.Actore.Movement.Transform"
+        "Mimi.Actore.Movement.Transform",
+        "Mimi.Actor.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
