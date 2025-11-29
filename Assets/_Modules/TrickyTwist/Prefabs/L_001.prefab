@@ -619,7 +619,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3999633355889825380}
-  - component: {fileID: 3136270940798068011}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -644,132 +643,6 @@ Transform:
   - {fileID: 1814493625515278448}
   m_Father: {fileID: 1578663493215990588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3136270940798068011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405875974004533177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 1659556269940927628}
-  boxCollider: {fileID: 2665811948518524727}
-  offsetField: {fileID: 5682629479738053022}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 2026958131120815445}
-    SpriteRenderer: {fileID: 3847349316532433421}
-    SpriteRendererEditData:
-      sprite: {fileID: -7441451069278321333, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 17
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 3847349316532433421}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2074646365880594971}
-        draggable: {fileID: 1659556269940927628}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2074646365880594971}
-        draggable: {fileID: 1659556269940927628}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 6737183961205514296}
-        compositePositionProcessor: {fileID: 2074646365880594971}
-        draggable: {fileID: 1659556269940927628}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2074646365880594971}
-        draggable: {fileID: 1659556269940927628}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 8808455188903518993}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 4872319316418387047}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 7601014977499043841}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1659556269940927628}
-        compositeDraggableExtension: {fileID: 2807403184192534966}
 --- !u!1 &424934290055206885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1210,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5098580094933596765}
   - {fileID: 2026868491562621035}
   - {fileID: 676494577767005675}
   - {fileID: 7385342303921954517}
@@ -2263,7 +2135,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3373264517419732697}
-  - component: {fileID: 4509344235777642562}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -2288,132 +2159,6 @@ Transform:
   - {fileID: 6191166683556643955}
   m_Father: {fileID: 4095605245482877127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4509344235777642562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071803998455380241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 6451506590228448129}
-  boxCollider: {fileID: 5688048467764686186}
-  offsetField: {fileID: 5961963698452877437}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 4293575213025756777}
-    SpriteRenderer: {fileID: 1683088916141971327}
-    SpriteRendererEditData:
-      sprite: {fileID: 1012302247616486528, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 15
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 1683088916141971327}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4048608899727596305}
-        draggable: {fileID: 6451506590228448129}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4048608899727596305}
-        draggable: {fileID: 6451506590228448129}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 9061148363760529631}
-        compositePositionProcessor: {fileID: 4048608899727596305}
-        draggable: {fileID: 6451506590228448129}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4048608899727596305}
-        draggable: {fileID: 6451506590228448129}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 7612543142632198638}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 4167589018126784386}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 2793715640294895978}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6451506590228448129}
-        compositeDraggableExtension: {fileID: 3561746668334038301}
 --- !u!1 &1084461271452394878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,7 +5413,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2551113202686220071}
-  - component: {fileID: 2548485604554397458}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -5693,132 +5437,6 @@ Transform:
   - {fileID: 3741419930098429674}
   m_Father: {fileID: 2203647482734047364}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2548485604554397458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2526625723228984293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 1212140805733495585}
-  boxCollider: {fileID: 814143472383371618}
-  offsetField: {fileID: 7573283211996648093}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 976200447848341381}
-    SpriteRenderer: {fileID: 7951609978381757845}
-    SpriteRendererEditData:
-      sprite: {fileID: 21300000, guid: f873e10062dd8ab4dbc86835fa025de7, type: 3}
-      sortingOrder: 6
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 7951609978381757845}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4176479149931440165}
-        draggable: {fileID: 1212140805733495585}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4176479149931440165}
-        draggable: {fileID: 1212140805733495585}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 4147092953135477764}
-        compositePositionProcessor: {fileID: 4176479149931440165}
-        draggable: {fileID: 1212140805733495585}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4176479149931440165}
-        draggable: {fileID: 1212140805733495585}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 174842400549752345}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 7129278516572453519}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 2488336724533878170}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1212140805733495585}
-        compositeDraggableExtension: {fileID: 1449256568252087332}
 --- !u!1 &2538161658011215804
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,6 +8617,85 @@ MonoBehaviour:
   gameObjects:
   - {fileID: 4951906957258603638}
   status: 1
+--- !u!1 &3778155509666402775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8613179020963747253}
+  - component: {fileID: 1938869316691821245}
+  - component: {fileID: 4695426646048243077}
+  m_Layer: 0
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8613179020963747253
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778155509666402775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2560756546505878701}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -104}
+  m_SizeDelta: {x: 926, y: 335.3917}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &1938869316691821245
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778155509666402775}
+  m_CullTransparentMesh: 1
+--- !u!114 &4695426646048243077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778155509666402775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 163
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "H\xE3y gi\xFAp ng\u01B0\u1EDDi v\u1EE3 \nh\u1EBFt t\u1EE9c gi\u1EADn"
 --- !u!1 &3841889138036472283
 GameObject:
   m_ObjectHideFlags: 0
@@ -9965,7 +9662,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8367388912584085075}
-  - component: {fileID: 648127550167970897}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -9990,132 +9686,6 @@ Transform:
   - {fileID: 5306400627296737260}
   m_Father: {fileID: 5747991215742981308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &648127550167970897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4459027918271386632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 6779057543285383184}
-  boxCollider: {fileID: 4430938832268132910}
-  offsetField: {fileID: 2784416849520407398}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 3390136632819599822}
-    SpriteRenderer: {fileID: 7616273586256750497}
-    SpriteRendererEditData:
-      sprite: {fileID: -3881982249062868918, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 18
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 7616273586256750497}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4367374642667118664}
-        draggable: {fileID: 6779057543285383184}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4367374642667118664}
-        draggable: {fileID: 6779057543285383184}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 4975989200841893761}
-        compositePositionProcessor: {fileID: 4367374642667118664}
-        draggable: {fileID: 6779057543285383184}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4367374642667118664}
-        draggable: {fileID: 6779057543285383184}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 4440631556340350648}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 6159484430178491282}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 3488252119624075248}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 6779057543285383184}
-        compositeDraggableExtension: {fileID: 101619674096168247}
 --- !u!1 &4507712620602624682
 GameObject:
   m_ObjectHideFlags: 0
@@ -10904,7 +10474,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8109526155876685341}
-  - component: {fileID: 638325002582111329}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -10929,132 +10498,6 @@ Transform:
   - {fileID: 7260261086804385764}
   m_Father: {fileID: 9115683776014991738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &638325002582111329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691082380281561470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 873656120951790174}
-  boxCollider: {fileID: 167644919634422898}
-  offsetField: {fileID: 9066231589833491353}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 6483590321082813737}
-    SpriteRenderer: {fileID: 9172377062335536798}
-    SpriteRendererEditData:
-      sprite: {fileID: -8470307703901462054, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 29
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 9172377062335536798}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 8437369104036529022}
-        draggable: {fileID: 873656120951790174}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 8437369104036529022}
-        draggable: {fileID: 873656120951790174}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 669492392472575460}
-        compositePositionProcessor: {fileID: 8437369104036529022}
-        draggable: {fileID: 873656120951790174}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 8437369104036529022}
-        draggable: {fileID: 873656120951790174}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 5702416366074623583}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 6977607435697266921}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 1893475776010048262}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 873656120951790174}
-        compositeDraggableExtension: {fileID: 5436321316593095574}
 --- !u!1 &4718684680742504030
 GameObject:
   m_ObjectHideFlags: 0
@@ -14259,7 +13702,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8064410893957655651}
-  - component: {fileID: 4052568926746041480}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -14284,132 +13726,6 @@ Transform:
   - {fileID: 4435652027192275206}
   m_Father: {fileID: 1316237376299210807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4052568926746041480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510071748988486378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 2030294274012768904}
-  boxCollider: {fileID: 4010238489673617597}
-  offsetField: {fileID: 5805494559070979396}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 63343675972687946}
-    SpriteRenderer: {fileID: 2677925381956324221}
-    SpriteRendererEditData:
-      sprite: {fileID: 5750800625271044069, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 21
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 2677925381956324221}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 3728138904860000949}
-        draggable: {fileID: 2030294274012768904}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 3728138904860000949}
-        draggable: {fileID: 2030294274012768904}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 6715148241017048123}
-        compositePositionProcessor: {fileID: 3728138904860000949}
-        draggable: {fileID: 2030294274012768904}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 3728138904860000949}
-        draggable: {fileID: 2030294274012768904}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 3754972660532588783}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 6914880490825173745}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 5819167541515801593}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 2030294274012768904}
-        compositeDraggableExtension: {fileID: 4234472412520205700}
 --- !u!1 &6513011652659489070
 GameObject:
   m_ObjectHideFlags: 0
@@ -14934,93 +14250,6 @@ MonoBehaviour:
   gameObjects:
   - {fileID: 4951906957258603638}
   status: 1
---- !u!1 &6812840612761653991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5098580094933596765}
-  - component: {fileID: 523948712182976246}
-  m_Layer: 0
-  m_Name: "H\xE3y gi\xFAp ng\u01B0\u1EDDi v\u1EE3  h\u1EBFt t\u1EE9c gi\u1EADn"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5098580094933596765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6812840612761653991}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13500023, y: 20.625, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7566471298864020282}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &523948712182976246
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6812840612761653991}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 35
-  m_Sprite: {fileID: 21300000, guid: 6cf26b9aab234ff4783042b333f5af4e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 8.81, y: 2.39}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &6872254929705061709
 GameObject:
   m_ObjectHideFlags: 0
@@ -16255,6 +15484,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1747523023327287271}
+  - {fileID: 8613179020963747253}
   m_Father: {fileID: 672132922175117010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16685,7 +15915,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7902812328006944167}
-  - component: {fileID: 8646315753250124214}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -16710,132 +15939,6 @@ Transform:
   - {fileID: 737447786170844707}
   m_Father: {fileID: 4292692210311418399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8646315753250124214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7778757617698107862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 3675283785735405929}
-  boxCollider: {fileID: 6878417062613480064}
-  offsetField: {fileID: 7380253244339850587}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 5298351811142510566}
-    SpriteRenderer: {fileID: 6059806144436739251}
-    SpriteRendererEditData:
-      sprite: {fileID: -1890101582580372648, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 4
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 6059806144436739251}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2629552227843493563}
-        draggable: {fileID: 3675283785735405929}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2629552227843493563}
-        draggable: {fileID: 3675283785735405929}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 4240071119773878956}
-        compositePositionProcessor: {fileID: 2629552227843493563}
-        draggable: {fileID: 3675283785735405929}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2629552227843493563}
-        draggable: {fileID: 3675283785735405929}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 2329721040627678251}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 7004156038164538819}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 2891107326103879378}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 3675283785735405929}
-        compositeDraggableExtension: {fileID: 8122268995166993617}
 --- !u!1 &7781718746480697026
 GameObject:
   m_ObjectHideFlags: 0
@@ -18409,7 +17512,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4094566678153448570}
-  - component: {fileID: 5915763957560980502}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -18434,132 +17536,6 @@ Transform:
   - {fileID: 2843062027348742286}
   m_Father: {fileID: 809268813804064804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5915763957560980502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8534776324582501568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 1285455701380535981}
-  boxCollider: {fileID: 3977144817842951062}
-  offsetField: {fileID: 5445505507452671231}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 3383354648060869222}
-    SpriteRenderer: {fileID: 5824241211010444689}
-    SpriteRendererEditData:
-      sprite: {fileID: 5049041353507180983, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 9
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 5824241211010444689}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2334579734656223390}
-        draggable: {fileID: 1285455701380535981}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2334579734656223390}
-        draggable: {fileID: 1285455701380535981}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 5526082502214992540}
-        compositePositionProcessor: {fileID: 2334579734656223390}
-        draggable: {fileID: 1285455701380535981}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 2334579734656223390}
-        draggable: {fileID: 1285455701380535981}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 1477901952393868795}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 3886387582581791419}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 5806097033660056248}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 1285455701380535981}
-        compositeDraggableExtension: {fileID: 7431340052926923781}
 --- !u!1 &8695097873522563193
 GameObject:
   m_ObjectHideFlags: 0
@@ -19090,7 +18066,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009856329144412028}
-  - component: {fileID: 2448442585447301260}
   m_Layer: 0
   m_Name: VisualTool
   m_TagString: Untagged
@@ -19115,132 +18090,6 @@ Transform:
   - {fileID: 7540720822806806177}
   m_Father: {fileID: 2296735353790584160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2448442585447301260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8955473014151215862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6976a1324447c3a4e964896e631517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: {fileID: 653036344347012260}
-  boxCollider: {fileID: 3965646926432573456}
-  offsetField: {fileID: 6257158639262838528}
-  graphicEditDatas:
-  - graphicType: 0
-    targetTransform: {fileID: 7158578378689795820}
-    SpriteRenderer: {fileID: 8809844764672773799}
-    SpriteRendererEditData:
-      sprite: {fileID: 8858857772756110307, guid: a194d2a8ebebabf43a32d746b563cbae, type: 3}
-      sortingOrder: 8
-      sortingLayerName: Default
-      spriteRenderer: {fileID: 8809844764672773799}
-    SkeletonAnimation: {fileID: 0}
-  movementBehaviours:
-  - rid: 1990592249771851882
-  - rid: 1990592249771851883
-  - rid: 1990592249771851884
-  - rid: 1990592249771851885
-  toolExtensions:
-  - rid: 1990592249771851886
-  - rid: 1990592249771851887
-  - rid: 1990592249771851888
-  - rid: 1990592249771851889
-  - rid: 1990592249771851890
-  - rid: 1990592249771851891
-  - rid: 4137442000234348642
-  - rid: 4137442000234348643
-  references:
-    version: 2
-    RefIds:
-    - rid: 1990592249771851882
-      type: {class: HorizontalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4392511768896408152}
-        draggable: {fileID: 653036344347012260}
-    - rid: 1990592249771851883
-      type: {class: MoveInAreaPositionProcessorEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4392511768896408152}
-        draggable: {fileID: 653036344347012260}
-    - rid: 1990592249771851884
-      type: {class: OffsetPositionBehaviour, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        processor: {fileID: 4000825754714166654}
-        compositePositionProcessor: {fileID: 4392511768896408152}
-        draggable: {fileID: 653036344347012260}
-    - rid: 1990592249771851885
-      type: {class: VerticalLockPositionEdit, ns: Mimi.VisualActions.Generate.Editor, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        processor: {fileID: 0}
-        compositePositionProcessor: {fileID: 4392511768896408152}
-        draggable: {fileID: 653036344347012260}
-    - rid: 1990592249771851886
-      type: {class: ChangeLayerSortingGraphicWhenSelectEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 7431502932453550600}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 1990592249771851887
-      type: {class: DraggableItemExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 1990592249771851888
-      type: {class: PlaySoundExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 3926723354816469932}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 1990592249771851889
-      type: {class: ReturnOnDeselectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 1
-        extension: {fileID: 3960719284283987590}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 1990592249771851890
-      type: {class: ScaleOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 1990592249771851891
-      type: {class: SwitchObjectOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 4137442000234348642
-      type: {class: RotateOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
-    - rid: 4137442000234348643
-      type: {class: VibrationOnSelectExtensionEdit, ns: Mimi.VisualActions.Generate.Editor.DraggableExtension, asm: Mimi.VisualActions.Generate.Editor}
-      data:
-        isToggle: 0
-        extension: {fileID: 0}
-        draggable: {fileID: 653036344347012260}
-        compositeDraggableExtension: {fileID: 8778409746302231896}
 --- !u!1 &8958942024889560134
 GameObject:
   m_ObjectHideFlags: 0
