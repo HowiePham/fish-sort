@@ -1,11 +1,12 @@
-using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class FishTank : MonoBehaviour
 {
+    [SerializeField] private Transform entryPoint;
     [SerializeField] private FishHolder[] fishHolders;
     [SerializeField] private bool isCompleted;
+    public Vector3 EntryPos => this.entryPoint.position;
 
     private void Start()
     {
@@ -40,6 +41,33 @@ public class FishTank : MonoBehaviour
         }
 
         this.isCompleted = true;
+    }
+
+    public Vector3 OccupyEmptyHolder(int fishType)
+    {
+        foreach (FishHolder fishHolder in this.fishHolders)
+        {
+            if (!fishHolder.IsOccupied)
+            {
+                fishHolder.OccupyHolder(fishType);
+                return fishHolder.transform.position;
+            }
+        }
+
+        return Vector3.zero;
+    }
+
+    public bool IsFull()
+    {
+        foreach (FishHolder fishHolder in this.fishHolders)
+        {
+            if (!fishHolder.IsOccupied)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
 #if UNITY_EDITOR

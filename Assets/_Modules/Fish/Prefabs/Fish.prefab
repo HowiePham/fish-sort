@@ -167,15 +167,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 5992697803775661462}
   smoothTime: 0.2
-  speedScalar: 2
+  speedScalar: 10
   draggingOffset: {x: 0, y: 0.5, z: 0}
   isSelected: 0
   oldDestination: {x: 0, y: 0, z: 0}
-  destination: {fileID: 0}
-  fallEase: 5
-  throwPower: 8
-  jumpDuration: 1.5
+  jumpDuration: 1
   movingDuration: 0.75
+  jumpHeight: 6
+  sinkDepth: 0.75
+  sinkDuration: 0.75
+  swimUpDuration: 0.5
+  currentFishTank: {fileID: 0}
+  selectedFishTank: {fileID: 0}
 --- !u!61 &5992697803775661462
 BoxCollider2D:
   m_ObjectHideFlags: 0
