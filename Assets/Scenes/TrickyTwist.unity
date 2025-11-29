@@ -302,7 +302,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.55
+  orthographic size: 11.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -342,16 +342,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c12a7a006f4afe8feeca019a6864a7, type: 3}
+  m_Script: {fileID: 11500000, guid: c2c1e6fde4b543009953d49ccb9fee3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeDefault: 19.1
-  size21_9: 25.1
-  size20_9: 23.3
-  size18_9: 21.6
-  size18_39: 23.3
-  size16_9: 19.1
-  size4_3: 19.1
+  cameraFit: {fileID: 519420034}
+  defaultSize: 19.2
+  _16_9: 19.2
+  _16_10: 17.26
+  _18_9: 21.6
+  _39_18: 23.4
+  _20_9: 24
+  _21_9: 25
+  _4_3: 17.5
+  _3_2: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,16 +364,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f4e5bd5a9a451f49873e96cdaace02b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3557b3b3bd714a99ac316f5b22f586b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetCamera: {fileID: 519420031}
+  startingUnitSize: 23.4
+  orientationConstraint: 1
   wireColor: {r: 1, g: 1, b: 1, a: 1}
-  UnitsSize: 19.1
-  constraint: 1
-  camera: {fileID: 519420031}
-  computeOnAwake: 1
-  offsetUnit: 0
-  updateContinuously: 1
 --- !u!1 &570745843
 GameObject:
   m_ObjectHideFlags: 0
