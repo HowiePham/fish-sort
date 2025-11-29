@@ -21,6 +21,7 @@ public static class AspectRatio
     {
         ratio = Vector2Int.one;
         float f = (float) x / (float) y;
+        Debug.Log($"f = {x} / {y} = {f}");
 
         if (f >= 0.42 && f < 0.44f)
         {
