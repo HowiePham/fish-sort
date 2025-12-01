@@ -86,11 +86,14 @@ public class FishInteracting : MonoBehaviour
         {
             Vector3 entryPos = this.selectedFishTank.EntryPos;
             Vector3 holderPos = this.selectedFishTank.OccupyEmptyHolder(1);
-            this.transform.position = this.currentFishTank.EntryPos;
+            // this.transform.position = this.currentFishTank.EntryPos;
+            this.transform.position = entryPos;
 
             await UniTask.WaitForSeconds(0.5f);
 
-            await this.fishMoving.JumpToPosition(this.transform, entryPos, holderPos, this.jumpHeight, this.sinkDepth,
+            // await this.fishMoving.JumpToPosition(this.transform, entryPos, holderPos, this.jumpHeight, this.sinkDepth,
+            //     this.jumpDuration, this.sinkDuration, this.swimUpDuration);
+            await this.fishMoving.SinkToPosition(this.transform, entryPos, holderPos, this.sinkDepth,
                 this.jumpDuration, this.sinkDuration, this.swimUpDuration);
 
             this.oldDestination = holderPos;

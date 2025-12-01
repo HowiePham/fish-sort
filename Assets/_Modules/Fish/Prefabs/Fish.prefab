@@ -170,11 +170,12 @@ MonoBehaviour:
   speedScalar: 10
   draggingOffset: {x: 0, y: 0.5, z: 0}
   isSelected: 0
+  isMoving: 0
   oldDestination: {x: 0, y: 0, z: 0}
-  jumpDuration: 1
+  jumpDuration: 0.5
   movingDuration: 0.75
   jumpHeight: 6
-  sinkDepth: 0.75
+  sinkDepth: 1
   sinkDuration: 0.75
   swimUpDuration: 0.5
   currentFishTank: {fileID: 0}
