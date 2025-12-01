@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dda9a90766eb4f142987f671b6060d1e
+guid: 65ac5a5f91bd94441804118f9a33a302
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5714331014789189584
-    second: wife-angry_0
+      213: -8261441066230269528
+    second: WifeAngry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wife-angry_0
+      name: WifeAngry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 284
-        height: 660
+        width: 297
+        height: 607
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dfc18938c16d4f40800000000000000
-      internalID: 5714331014789189584
+      spriteID: 8a9358a0f17795d80800000000000000
+      internalID: -8261441066230269528
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wife-angry_0: 5714331014789189584
+      WifeAngry_0: -8261441066230269528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
