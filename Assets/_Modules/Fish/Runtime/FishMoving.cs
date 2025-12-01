@@ -11,12 +11,21 @@ public class FishMoving
     {
         this.movingSequence?.Kill();
 
+        var startPos = targetObject.position;
         var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
+
+        float heightDiff = startPos.y - waterPos.y;
+
+        float adjustedJumpHeight = jumpHeight;
+        if (heightDiff > 0)
+        {
+            adjustedJumpHeight = heightDiff + jumpHeight;
+        }
 
         this.movingSequence = DOTween.Sequence();
 
         this.movingSequence.Append(
-            targetObject.DOJump(waterPos, jumpHeight, 1, jumpDuration)
+            targetObject.DOJump(waterPos, adjustedJumpHeight, 1, jumpDuration)
                 .SetEase(Ease.InOutQuad)
         );
 
@@ -42,7 +51,7 @@ public class FishMoving
         var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
 
         this.movingSequence = DOTween.Sequence();
-        
+
         this.movingSequence.Append(
             targetObject.DOMove(waterPos, moveDuration)
                 .SetEase(Ease.InOutQuad)
