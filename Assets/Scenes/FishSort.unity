@@ -119,11 +119,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &409320933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8346386867472668235, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+  m_PrefabInstance: {fileID: 1570135963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d330c9d6538d7d46884abe018c92dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &454202947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
   m_PrefabInstance: {fileID: 2101090041539008827}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &454202949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2185353722121419552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+  m_PrefabInstance: {fileID: 2101090041539008827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4da44f55aea6154db64c784496b8944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +288,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
   m_PrefabInstance: {fileID: 1676897828}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1039900167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2185353722121419552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+  m_PrefabInstance: {fileID: 1676897828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4da44f55aea6154db64c784496b8944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1240006747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,6 +307,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1616449795}
     m_Modifications:
+    - target: {fileID: 435100426753494251, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.99
@@ -314,11 +351,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3155561459170209477, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4544636634390199736, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_Name
       value: FishTank (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8346386867472668235, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 791241815618489552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -402,6 +448,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326985993 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3555297768525008714, guid: 3c97c63b02df41d4d8c617cefeb13050, type: 3}
+  m_PrefabInstance: {fileID: 675664517990370159}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b89fa4c52e6ec45816eccaffab5419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1570135963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,6 +467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1616449795}
     m_Modifications:
+    - target: {fileID: 435100426753494251, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1
@@ -450,11 +511,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3155561459170209477, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4544636634390199736, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_Name
       value: FishTank (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8346386867472668235, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 791241815618489552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -468,6 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1616449795}
+  - component: {fileID: 1616449796}
   m_Layer: 0
   m_Name: LevelRoot
   m_TagString: Untagged
@@ -494,6 +565,30 @@ Transform:
   - {fileID: 564005327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1616449796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616449794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc9f53d310ab574abec283a2d4e7465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTime: 0.2
+  speedScalar: 2
+  draggingOffset: {x: 0, y: 0, z: 0}
+  selectedFish: {fileID: 0}
+  isDragging: 0
+  fishList:
+  - {fileID: 1326985993}
+  fishTanks:
+  - {fileID: 454202949}
+  - {fileID: 1928497604}
+  - {fileID: 1940447891}
+  - {fileID: 1039900167}
 --- !u!1001 &1676897828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -502,6 +597,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1616449795}
     m_Modifications:
+    - target: {fileID: 435100426753494251, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1000001
@@ -542,11 +641,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3155561459170209477, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4544636634390199736, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
       propertyPath: m_Name
       value: FishTank (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8346386867472668235, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+      propertyPath: interactingSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 791241815618489552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -572,6 +680,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2012789322457796030, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
   m_PrefabInstance: {fileID: 1570135963}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1940447891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2185353722121419552, guid: 4628b414c3d2ca54cb07ac4249237c03, type: 3}
+  m_PrefabInstance: {fileID: 1240006747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4da44f55aea6154db64c784496b8944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960479252
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,9 +758,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4340098433673696538, guid: 3c97c63b02df41d4d8c617cefeb13050, type: 3}
-      propertyPath: currentFishTank
+      propertyPath: currentFishHolder
       value: 
-      objectReference: {fileID: 1928497604}
+      objectReference: {fileID: 409320933}
     - target: {fileID: 4639041452636575230, guid: 3c97c63b02df41d4d8c617cefeb13050, type: 3}
       propertyPath: m_Name
       value: Fish

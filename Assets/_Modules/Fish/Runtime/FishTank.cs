@@ -1,12 +1,15 @@
+using Lean.Touch;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class FishTank : MonoBehaviour
 {
     [SerializeField] private Transform entryPoint;
+    [SerializeField] private Transform waterPoint;
     [SerializeField] private FishHolder[] fishHolders;
     [SerializeField] private bool isCompleted;
     public Vector3 EntryPos => this.entryPoint.position;
+    public Vector3 WaterPos => this.waterPoint.position;
 
     private void Start()
     {
@@ -41,6 +44,19 @@ public class FishTank : MonoBehaviour
         }
 
         this.isCompleted = true;
+    }
+
+    public FishHolder SelectFishHolder(LeanFinger finger)
+    {
+        foreach (FishHolder holder in this.fishHolders)
+        {
+            if (holder.CanInteract(finger))
+            {
+                return holder;
+            }
+        }
+
+        return null;
     }
 
     public Vector3 OccupyEmptyHolder(int fishType)

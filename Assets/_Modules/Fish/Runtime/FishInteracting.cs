@@ -12,25 +12,15 @@ public class FishInteracting : MonoBehaviour
     [SerializeField] private Vector3 draggingOffset;
     [SerializeField] private bool isSelected;
     [SerializeField] private bool isMoving;
-    private Vector3 dragVelocity;
 
     [Header("Fish Moving Config")] private FishMoving fishMoving;
-    [SerializeField] private Vector3 oldDestination;
     [SerializeField] private float jumpDuration;
     [SerializeField] private float movingDuration;
     [SerializeField] private float jumpHeight = 2f;
     [SerializeField] private float sinkDepth = 0.5f;
     [SerializeField] private float sinkDuration = 0.3f;
     [SerializeField] private float swimUpDuration = 0.5f;
-    [SerializeField] private FishTank currentFishTank;
-    [SerializeField] private FishTank selectedFishTank;
-
-    private void OnEnable()
-    {
-        LeanTouch.OnFingerDown += FingerDownHandler;
-        LeanTouch.OnFingerUp += FingerUpHandler;
-        LeanTouch.OnFingerUpdate += FingerUpdateHandler;
-    }
+    [SerializeField] private FishHolder currentFishHolder;
 
     private void Start()
     {
@@ -42,69 +32,42 @@ public class FishInteracting : MonoBehaviour
         this.fishMoving = new FishMoving();
     }
 
-    private void FingerUpdateHandler(LeanFinger finger)
+    public async UniTask MoveTo(Vector3 entryPos, FishHolder fishHolder)
     {
-        if (!this.isSelected)
-        {
-            return;
-        }
-
-        Vector3 fingerPos = finger.GetWorldPosition(10);
-        Vector3 newPos = fingerPos + this.draggingOffset;
-
-        this.transform.position = Vector3.SmoothDamp(this.transform.position, newPos, ref this.dragVelocity, this.smoothTime,
-            Mathf.Infinity, Time.deltaTime * this.speedScalar);
-    }
-
-    private void FingerDownHandler(LeanFinger finger)
-    {
-        if (CanSelectFish(finger))
-        {
-            this.isSelected = true;
-        }
-    }
-
-    private void FingerUpHandler(LeanFinger finger)
-    {
-        if (!this.isSelected)
-        {
-            return;
-        }
-
-        this.isSelected = false;
         this.isMoving = true;
-        MoveFish();
-    }
 
-    private async UniTask MoveFish()
-    {
-        if (this.selectedFishTank == null)
-        {
-            await this.fishMoving.MoveToPosition(this.transform, this.oldDestination, this.movingDuration);
-        }
-        else
-        {
-            Vector3 entryPos = this.selectedFishTank.EntryPos;
-            Vector3 holderPos = this.selectedFishTank.OccupyEmptyHolder(1);
-            // this.transform.position = this.currentFishTank.EntryPos;
-            this.transform.position = entryPos;
+        Vector3 holderPos = fishHolder.Position;
+        this.transform.position = entryPos;
+        this.currentFishHolder.LeaveHolder();
 
-            await UniTask.WaitForSeconds(0.5f);
+        await this.fishMoving.SinkToPosition(this.transform, entryPos, holderPos, this.sinkDepth,
+            this.movingDuration, this.sinkDuration, this.swimUpDuration);
 
-            // await this.fishMoving.JumpToPosition(this.transform, entryPos, holderPos, this.jumpHeight, this.sinkDepth,
-            //     this.jumpDuration, this.sinkDuration, this.swimUpDuration);
-            await this.fishMoving.SinkToPosition(this.transform, entryPos, holderPos, this.sinkDepth,
-                this.jumpDuration, this.sinkDuration, this.swimUpDuration);
-
-            this.oldDestination = holderPos;
-            this.currentFishTank = this.selectedFishTank;
-        }
-
-        this.selectedFishTank = null;
+        this.currentFishHolder = fishHolder;
         this.isMoving = false;
     }
 
-    private bool CanSelectFish(LeanFinger finger)
+    public async UniTask JumpTo(Vector3 waterPos, FishHolder fishHolder)
+    {
+        this.isMoving = true;
+
+        Vector3 holderPos = fishHolder.Position;
+        this.currentFishHolder.LeaveHolder();
+
+        await this.fishMoving.JumpToPosition(this.transform, waterPos, holderPos, this.jumpHeight, this.sinkDepth,
+            this.jumpDuration, this.sinkDuration, this.swimUpDuration);
+
+        this.currentFishHolder = fishHolder;
+        this.isMoving = false;
+    }
+
+    public async UniTask MoveBack()
+    {
+        await this.fishMoving.MoveToPosition(this.transform, this.currentFishHolder.Position, this.movingDuration);
+        this.isMoving = false;
+    }
+
+    public bool CanSelectFish(LeanFinger finger)
     {
         if (this.isMoving)
         {
@@ -113,24 +76,5 @@ public class FishInteracting : MonoBehaviour
 
         Vector3 fingerPos = finger.GetWorldPosition(10);
         return this.boxCollider.bounds.Contains(fingerPos);
-    }
-
-    private void OnDisable()
-    {
-        LeanTouch.OnFingerDown -= FingerDownHandler;
-        LeanTouch.OnFingerUp -= FingerUpHandler;
-        LeanTouch.OnFingerUpdate -= FingerUpdateHandler;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        var fishTank = collider.GetComponent<FishTank>();
-        if (fishTank == null || fishTank.IsFull() || fishTank == this.currentFishTank)
-        {
-            this.selectedFishTank = null;
-            return;
-        }
-
-        this.selectedFishTank = fishTank;
     }
 }

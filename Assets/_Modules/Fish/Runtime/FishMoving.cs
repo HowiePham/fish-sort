@@ -6,17 +6,17 @@ public class FishMoving
 {
     private Sequence movingSequence;
 
-    public async UniTask JumpToPosition(Transform targetObject, Vector3 entryPos, Vector3 destination, float jumpHeight,
+    public async UniTask JumpToPosition(Transform targetObject, Vector3 waterPos, Vector3 destination, float jumpHeight,
         float sinkDepth, float jumpDuration, float sinkDuration, float swimUpDuration)
     {
         this.movingSequence?.Kill();
 
-        var sinkPos = new Vector3(entryPos.x, entryPos.y - sinkDepth, entryPos.z);
+        var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
 
         this.movingSequence = DOTween.Sequence();
 
         this.movingSequence.Append(
-            targetObject.DOJump(entryPos, jumpHeight, 1, jumpDuration)
+            targetObject.DOJump(waterPos, jumpHeight, 1, jumpDuration)
                 .SetEase(Ease.InOutQuad)
         );
 
@@ -42,7 +42,7 @@ public class FishMoving
         var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
 
         this.movingSequence = DOTween.Sequence();
-
+        
         this.movingSequence.Append(
             targetObject.DOMove(waterPos, moveDuration)
                 .SetEase(Ease.InOutQuad)
