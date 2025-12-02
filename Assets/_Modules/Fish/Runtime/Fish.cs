@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Lean.Touch;
 using UnityEngine;
 
@@ -7,20 +8,21 @@ public class Fish : MonoBehaviour
     [SerializeField] private FishInteracting fishInteracting;
     [SerializeField] private FishType fishType;
     public Bounds Bounds => this.fishVisual.GetBounds();
+    public int FishTypeNumber => this.fishType.TypeNumber;
 
     public bool CanSelectFish(LeanFinger finger)
     {
         return this.fishInteracting.CanSelectFish(finger);
     }
 
-    public void MoveTo(Vector3 entryPos, FishHolder fishHolder)
+    public async UniTask MoveTo(Vector3 entryPos, FishHolder fishHolder)
     {
-        this.fishInteracting.MoveTo(entryPos, fishHolder);
+        await this.fishInteracting.MoveTo(entryPos, fishHolder);
     }
 
-    public void JumpTo(Vector3 waterPos, FishHolder fishHolder)
+    public async UniTask JumpTo(Vector3 waterPos, FishHolder fishHolder)
     {
-        this.fishInteracting.JumpTo(waterPos, fishHolder);
+        await this.fishInteracting.JumpTo(waterPos, fishHolder);
     }
 
     public void MoveBack()

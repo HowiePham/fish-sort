@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Lean.Touch;
 using UnityEngine;
 
@@ -77,10 +78,8 @@ public class GameInputHandler : MonoBehaviour
         }
         else
         {
-            this.selectedFish.JumpTo(fishTank.WaterPos, fishHolder);
+            MoveFish(fishTank.WaterPos, fishHolder, true);
         }
-
-        this.selectedFish = null;
     }
 
     private void FingerUpHandler(LeanFinger finger)
@@ -102,12 +101,25 @@ public class GameInputHandler : MonoBehaviour
             }
             else
             {
-                this.selectedFish.MoveTo(fishTank.EntryPos, fishHolder);
+                MoveFish(fishTank.EntryPos, fishHolder, false);
             }
-
-            this.selectedFish = null;
-            this.isDragging = false;
         }
+    }
+
+    private async UniTask MoveFish(Vector3 entryPos, FishHolder fishHolder, bool isJump)
+    {
+        if (isJump)
+        {
+            await this.selectedFish.JumpTo(entryPos, fishHolder);
+        }
+        else
+        {
+            await this.selectedFish.MoveTo(entryPos, fishHolder);
+        }
+
+        // fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber);
+        this.selectedFish = null;
+        this.isDragging = false;
     }
 
     private bool CanSelectAnyFish(LeanFinger finger, out Fish selectedFish)

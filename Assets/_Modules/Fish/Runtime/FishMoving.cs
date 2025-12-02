@@ -15,18 +15,46 @@ public class FishMoving
         var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
 
         float heightDiff = startPos.y - waterPos.y;
+        float adjustedJumpHeight = heightDiff > 0 ? heightDiff + jumpHeight : jumpHeight;
 
-        float adjustedJumpHeight = jumpHeight;
-        if (heightDiff > 0)
-        {
-            adjustedJumpHeight = heightDiff + jumpHeight;
-        }
+        var peakPos = new Vector3(
+            (startPos.x + waterPos.x) / 2,
+            startPos.y + adjustedJumpHeight,
+            (startPos.z + waterPos.z) / 2
+        );
+
+        float jumpUpDuration = jumpDuration * 0.5f;
+        float fallDownDuration = jumpDuration * 0.5f;
 
         this.movingSequence = DOTween.Sequence();
 
+        var totalPoints = 40;
+        var peakIndex = 8;
+
+        Vector3[] fullPath = new Vector3[totalPoints];
+
+        for (var i = 0; i < totalPoints; i++)
+        {
+            if (i <= peakIndex)
+            {
+                float t = i / (float)peakIndex;
+                fullPath[i].x = Mathf.Lerp(startPos.x, peakPos.x, t);
+                fullPath[i].z = Mathf.Lerp(startPos.z, peakPos.z, t);
+                float easedT = t * t * (3f - 2f * t);
+                fullPath[i].y = startPos.y + adjustedJumpHeight * easedT;
+            }
+            else
+            {
+                float t = (i - peakIndex) / (float)(totalPoints - 1 - peakIndex);
+                fullPath[i].x = Mathf.Lerp(peakPos.x, waterPos.x, t);
+                fullPath[i].z = Mathf.Lerp(peakPos.z, waterPos.z, t);
+                fullPath[i].y = peakPos.y - adjustedJumpHeight * (t * t);
+            }
+        }
+
         this.movingSequence.Append(
-            targetObject.DOJump(waterPos, adjustedJumpHeight, 1, jumpDuration)
-                .SetEase(Ease.InOutQuad)
+            targetObject.DOPath(fullPath, jumpDuration, PathType.CatmullRom)
+                .SetEase(Ease.Linear)
         );
 
         this.movingSequence.Append(
