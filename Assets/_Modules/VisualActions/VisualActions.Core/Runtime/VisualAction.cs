@@ -99,6 +99,11 @@ namespace Mimi.VisualActions
             OnResumed();
         }
 
+        public virtual void Cancel()
+        {
+            
+        }
+
         protected virtual async UniTask OnEnter(CancellationToken cancellationToken)
         {
             Completed = false;
