@@ -10,6 +10,14 @@ public class Fish : MonoBehaviour
     public Bounds Bounds => this.fishVisual.GetBounds();
     public int FishTypeNumber => this.fishType.TypeNumber;
 
+    public void Init(FishHolder fishHolder, FishType fishType, Sprite fishSprite)
+    {
+        this.fishVisual.SetFishVisual(fishSprite);
+        this.fishType = fishType;
+
+        this.fishInteracting.Init(fishHolder, Bounds);
+    }
+
     public bool CanSelectFish(LeanFinger finger)
     {
         return this.fishInteracting.CanSelectFish(finger);
@@ -28,10 +36,5 @@ public class Fish : MonoBehaviour
     public void MoveBack()
     {
         this.fishInteracting.MoveBack();
-    }
-
-    public void SetFishVisual(Sprite sprite)
-    {
-        this.fishVisual.SetFishVisual(sprite);
     }
 }

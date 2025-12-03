@@ -59,18 +59,18 @@ public class FishTank : MonoBehaviour
         return null;
     }
 
-    public Vector3 OccupyEmptyHolder(int fishType)
+    public FishHolder OccupyEmptyHolder(int fishType)
     {
         foreach (FishHolder fishHolder in this.fishHolders)
         {
             if (!fishHolder.IsOccupied)
             {
                 fishHolder.OccupyHolder(fishType);
-                return fishHolder.transform.position;
+                return fishHolder;
             }
         }
 
-        return Vector3.zero;
+        return null;
     }
 
     public bool IsFull()

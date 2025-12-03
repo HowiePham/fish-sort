@@ -16,9 +16,15 @@ public class GameInputHandler : MonoBehaviour
     private Fish selectedFish;
 
     [SerializeField] private bool isDragging;
-    [SerializeField] private List<Fish> fishList;
-    [SerializeField] private FishTank[] fishTanks;
+    private List<Fish> fishInLevel;
+    private FishTank[] fishTanks;
     private Vector3 fingerOffset;
+
+    public void Init(List<Fish> fishInLevel, FishTank[] fishTanks)
+    {
+        this.fishInLevel = fishInLevel;
+        this.fishTanks = fishTanks;
+    }
 
     private void OnEnable()
     {
@@ -41,7 +47,7 @@ public class GameInputHandler : MonoBehaviour
 
     private void FingerUpdateHandler(LeanFinger finger)
     {
-        if (!this.isDragging)
+        if (!this.isDragging || this.selectedFish == null)
         {
             return;
         }
@@ -78,7 +84,8 @@ public class GameInputHandler : MonoBehaviour
         }
         else
         {
-            MoveFish(fishTank.WaterPos, fishHolder, true);
+            // MoveFish(fishTank.WaterPos, fishHolder, true);
+            MoveFish(fishTank.EntryPos, fishHolder, false);
         }
     }
 
@@ -98,6 +105,7 @@ public class GameInputHandler : MonoBehaviour
             if (fishTank == null)
             {
                 this.selectedFish.MoveBack();
+                this.selectedFish = null;
             }
             else
             {
@@ -124,7 +132,7 @@ public class GameInputHandler : MonoBehaviour
 
     private bool CanSelectAnyFish(LeanFinger finger, out Fish selectedFish)
     {
-        foreach (Fish fish in this.fishList)
+        foreach (Fish fish in this.fishInLevel)
         {
             if (fish.CanSelectFish(finger))
             {
@@ -142,7 +150,7 @@ public class GameInputHandler : MonoBehaviour
         foreach (FishTank fishTank in this.fishTanks)
         {
             FishHolder holder = fishTank.SelectFishHolder(finger);
-            if (holder == null)
+            if (holder == null || holder.IsOccupied)
             {
                 continue;
             }

@@ -12,6 +12,7 @@ public class FishInteracting : MonoBehaviour
     [SerializeField] private Vector3 draggingOffset;
     [SerializeField] private bool isSelected;
     [SerializeField] private bool isMoving;
+    private Bounds bounds;
 
     [Header("Fish Moving Config")] private FishMoving fishMoving;
     [SerializeField] private float jumpDuration;
@@ -22,14 +23,11 @@ public class FishInteracting : MonoBehaviour
     [SerializeField] private float swimUpDuration = 0.5f;
     [SerializeField] private FishHolder currentFishHolder;
 
-    private void Start()
-    {
-        Init();
-    }
-
-    private void Init()
+    public void Init(FishHolder currentFishHolder, Bounds bounds)
     {
         this.fishMoving = new FishMoving();
+        this.currentFishHolder = currentFishHolder;
+        this.bounds = bounds;
     }
 
     public async UniTask MoveTo(Vector3 entryPos, FishHolder fishHolder)
@@ -75,6 +73,6 @@ public class FishInteracting : MonoBehaviour
         }
 
         Vector3 fingerPos = finger.GetWorldPosition(10);
-        return this.boxCollider.bounds.Contains(fingerPos);
+        return this.bounds.Contains(fingerPos);
     }
 }
