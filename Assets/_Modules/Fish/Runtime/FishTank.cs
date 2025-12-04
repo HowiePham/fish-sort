@@ -1,9 +1,11 @@
+using Cysharp.Threading.Tasks;
 using Lean.Touch;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class FishTank : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem finishFx;
     [SerializeField] private Transform entryPoint;
     [SerializeField] private Transform waterPoint;
     [SerializeField] private FishHolder[] fishHolders;
@@ -31,19 +33,24 @@ public class FishTank : MonoBehaviour
         {
             if (!fishHolder.IsOccupied)
             {
-                this.isCompleted = false;
                 return;
             }
 
             int typeNumber = fishHolder.FishTypeNumber;
             if (fishTypeNumber != typeNumber)
             {
-                this.isCompleted = false;
                 return;
             }
         }
 
-        this.isCompleted = true;
+        FinishFishTank();
+    }
+
+    private async UniTask FinishFishTank()
+    {
+        await UniTask.WaitForSeconds(1);
+
+        this.finishFx.Play();
     }
 
     public FishHolder SelectFishHolder(LeanFinger finger)
@@ -70,13 +77,13 @@ public class FishTank : MonoBehaviour
         return selectedHolder;
     }
 
-    public FishHolder OccupyEmptyHolder(int fishType)
+    public FishHolder OccupyEmptyHolder(int fishType, Transform fishTransform)
     {
         foreach (FishHolder fishHolder in this.fishHolders)
         {
             if (!fishHolder.IsOccupied)
             {
-                fishHolder.OccupyHolder(fishType);
+                fishHolder.OccupyHolder(fishType, fishTransform);
                 return fishHolder;
             }
         }

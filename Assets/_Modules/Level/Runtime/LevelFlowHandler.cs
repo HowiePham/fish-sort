@@ -32,7 +32,7 @@ public class LevelFlowHandler : MonoBehaviour
 
             Fish fish = Instantiate(this.fishPrefab, this.transform);
             FishTank fishTank = this.fishTanks[fishTankIndex];
-            FishHolder holder = fishTank.OccupyEmptyHolder(fishType.TypeNumber);
+            FishHolder holder = fishTank.OccupyEmptyHolder(fishType.TypeNumber, fish.transform);
 
             fish.transform.position = holder.Position;
             fish.Init(holder, fishType, fishSprite);

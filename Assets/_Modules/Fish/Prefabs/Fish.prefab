@@ -173,9 +173,9 @@ MonoBehaviour:
   jumpDuration: 0.75
   movingDuration: 0.35
   jumpHeight: 4
-  sinkDepth: 1
-  sinkDuration: 0.75
-  swimUpDuration: 0.5
+  sinkDepth: 0.5
+  sinkDuration: 0.35
+  swimUpDuration: 0.3
   currentFishHolder: {fileID: 0}
 --- !u!61 &1980134460422662988
 BoxCollider2D:

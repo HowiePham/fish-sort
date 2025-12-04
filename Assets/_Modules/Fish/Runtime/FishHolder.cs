@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class FishHolder : MonoBehaviour
 {
+    [SerializeField] private Transform fishInHolderTransform;
     [SerializeField] private int fishTypeNumber;
     [SerializeField] private float interactingSize;
     [SerializeField] private bool isOccupied;
-    
+
     public Vector3 Position => this.transform.position;
 
     public Action OnFishMovingIn;
     public bool IsOccupied => this.isOccupied;
     public int FishTypeNumber => this.fishTypeNumber;
 
-    public void OccupyHolder(int typeNumber)
+    public void OccupyHolder(int typeNumber, Transform fishTransform)
     {
         this.isOccupied = true;
         this.fishTypeNumber = typeNumber;
+        this.fishInHolderTransform = fishTransform;
+        fishTransform.SetParent(this.transform);
         OnFishMovingIn?.Invoke();
     }
 
@@ -25,6 +28,7 @@ public class FishHolder : MonoBehaviour
     {
         this.fishTypeNumber = -1;
         this.isOccupied = false;
+        this.fishInHolderTransform = null;
     }
 
     public bool CanInteract(LeanFinger finger)

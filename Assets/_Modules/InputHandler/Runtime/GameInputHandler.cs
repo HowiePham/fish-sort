@@ -125,7 +125,7 @@ public class GameInputHandler : MonoBehaviour
             this.selectedFish.MoveTo(entryPos, fishHolder);
         }
 
-        fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber);
+        fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber, this.selectedFish.transform);
         this.selectedFish = null;
         this.isDragging = false;
     }
