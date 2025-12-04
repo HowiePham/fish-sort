@@ -18,6 +18,16 @@ public class Fish : MonoBehaviour
         this.fishInteracting.Init(fishHolder, Bounds);
     }
 
+    public void Select()
+    {
+        this.fishVisual.SetActiveOutline(true);
+    }
+
+    public void Deselect()
+    {
+        this.fishVisual.SetActiveOutline(false);
+    }
+
     public bool CanSelectFish(LeanFinger finger)
     {
         return this.fishInteracting.CanSelectFish(finger);

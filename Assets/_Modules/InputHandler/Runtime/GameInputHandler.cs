@@ -66,7 +66,8 @@ public class GameInputHandler : MonoBehaviour
         if (CanSelectAnyFish(finger, out Fish selectedFish))
         {
             Debug.Log($"--- (INPUT) Select Fish");
-            this.selectedFish = selectedFish;
+            DeselectCurrentFish();
+            SelectNewFish(selectedFish);
             return;
         }
 
@@ -85,8 +86,26 @@ public class GameInputHandler : MonoBehaviour
         else
         {
             MoveFish(fishTank.WaterPos, fishHolder, true);
-            // MoveFish(fishTank.EntryPos, fishHolder, false);
         }
+
+        DeselectCurrentFish();
+    }
+
+    private void SelectNewFish(Fish fish)
+    {
+        this.selectedFish = fish;
+        fish.Select();
+    }
+
+    private void DeselectCurrentFish()
+    {
+        if (this.selectedFish == null)
+        {
+            return;
+        }
+
+        this.selectedFish.Deselect();
+        this.selectedFish = null;
     }
 
     private void FingerUpHandler(LeanFinger finger)
@@ -105,12 +124,13 @@ public class GameInputHandler : MonoBehaviour
             if (fishTank == null)
             {
                 this.selectedFish.MoveBack();
-                this.selectedFish = null;
             }
             else
             {
                 MoveFish(fishTank.EntryPos, fishHolder, false);
             }
+
+            DeselectCurrentFish();
         }
     }
 
@@ -126,7 +146,6 @@ public class GameInputHandler : MonoBehaviour
         }
 
         fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber, this.selectedFish.transform);
-        this.selectedFish = null;
         this.isDragging = false;
     }
 
