@@ -84,8 +84,8 @@ public class GameInputHandler : MonoBehaviour
         }
         else
         {
-            // MoveFish(fishTank.WaterPos, fishHolder, true);
-            MoveFish(fishTank.EntryPos, fishHolder, false);
+            MoveFish(fishTank.WaterPos, fishHolder, true);
+            // MoveFish(fishTank.EntryPos, fishHolder, false);
         }
     }
 

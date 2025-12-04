@@ -596,6 +596,10 @@ MonoBehaviour:
       TypeNumber: 2
     fishSprite: {fileID: 21300000, guid: ccf88464e1cc29a4ab574d4cf1a6bf4f, type: 3}
     fishTankIndex: 0
+  - fishType:
+      TypeNumber: 2
+    fishSprite: {fileID: 21300000, guid: ccf88464e1cc29a4ab574d4cf1a6bf4f, type: 3}
+    fishTankIndex: 1
   fishInLevel: []
   fishTanks:
   - {fileID: 454202949}

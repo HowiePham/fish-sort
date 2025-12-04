@@ -11,7 +11,7 @@ public class RotateGameObjectByTween : VisualAction
     [SerializeField] [MainInput] private Transform targetTransform;
     [SerializeField] private Vector3 targetRotation;
     [SerializeField] private float duration = 0.3f;
-
+    
     protected override async UniTask OnExecuting(CancellationToken cancellationToken)
     {
         try
