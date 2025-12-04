@@ -24,32 +24,21 @@ public class FishMoving
             adjustedJumpHeight = heightDiff + jumpHeight;
         }
 
-        // Sửa lại: truyền đúng tham số vào JumpCoroutine
-        await JumpCoroutine(targetObject, jumpDuration, adjustedJumpHeight, startPos, waterPos);
+        await JumpCoroutine(targetObject, jumpDuration, adjustedJumpHeight, startPos, waterPos, sinkPos);
 
         this.movingSequence = DOTween.Sequence();
 
-        // Chìm xuống sinkPos và xoay cá theo hướng chìm
         this.movingSequence.Append(
             targetObject.DOMove(sinkPos, sinkDuration)
                 .SetEase(Ease.OutQuad)
         );
-        // this.movingSequence.Join(
-        //     targetObject.DORotateQuaternion(oldRotation, sinkDuration)
-        //         .SetEase(Ease.InQuad)
-        // );
-
-        // Bơi về destination với xoay mượt về hướng đích
-        float rotationDuration = Mathf.Min(swimUpDuration * 0.4f, 0.5f); // Xoay trong 40% thời gian đầu hoặc tối đa 0.5s
+        this.movingSequence.Join(
+            targetObject.DORotateQuaternion(oldRotation, sinkDuration));
 
         this.movingSequence.Append(
             targetObject.DOMove(destination, swimUpDuration)
                 .SetEase(Ease.OutQuad)
         );
-        // this.movingSequence.Join(
-        //     targetObject.DORotate(oldRotation.eulerAngles, rotationDuration)
-        //         .SetEase(Ease.OutQuad)
-        // );
 
         await this.movingSequence.Play().AsyncWaitForCompletion();
     }
@@ -58,9 +47,15 @@ public class FishMoving
         float sinkDepth, float moveDuration, float sinkDuration, float swimUpDuration)
     {
         this.movingSequence?.Kill();
+        Quaternion oldRotation = targetObject.rotation;
 
         var waterPos = new Vector3(entryPos.x, entryPos.y - 3.25f, entryPos.z);
         var sinkPos = new Vector3(waterPos.x, waterPos.y - sinkDepth, waterPos.z);
+
+        Vector3 directionToWater = (waterPos - entryPos).normalized;
+        float angleToWater = Mathf.Atan2(directionToWater.y, directionToWater.x) * Mathf.Rad2Deg;
+        Quaternion rotationToWater = Quaternion.Euler(0, 0, angleToWater);
+        targetObject.rotation = rotationToWater;
 
         this.movingSequence = DOTween.Sequence();
 
@@ -73,6 +68,8 @@ public class FishMoving
             targetObject.DOMove(sinkPos, sinkDuration)
                 .SetEase(Ease.OutQuad)
         );
+        this.movingSequence.Join(
+            targetObject.DORotateQuaternion(oldRotation, sinkDuration));
 
         this.movingSequence.Append(
             targetObject.DOMove(destination, swimUpDuration)
@@ -87,12 +84,10 @@ public class FishMoving
         await targetObject.DOMove(destination, duration).AsyncWaitForCompletion();
     }
 
-    private async UniTask JumpCoroutine(Transform transform, float jumpDuration, float jumpHeight, Vector2 start, Vector2 end)
+    private async UniTask JumpCoroutine(Transform transform, float jumpDuration, float jumpHeight, Vector2 start, Vector2 end, Vector2 sinkPos)
     {
         float elapsed = 0f;
 
-        // Tính điểm kiểm soát (control point) cho Bezier curve
-        // Điểm này nằm ở giữa và cao hơn (trên trục Y) để tạo quỹ đạo nhảy
         Vector2 midPoint = (start + end) / 2f;
         Vector2 controlPoint = midPoint + Vector2.up * jumpHeight;
 
@@ -103,15 +98,13 @@ public class FishMoving
             elapsed += Time.deltaTime;
             float linearT = elapsed / jumpDuration;
 
-            // Áp dụng easing curve cho chuyển động
-            // Nhanh lên đỉnh, chậm ở đỉnh, rơi nhanh xuống
+            // Áp dụng easing curve mới - cá ở đỉnh lâu hơn
             float t = ApplyJumpEasing(linearT);
 
-            // Tính vị trí trên đường cong Bezier bậc 2 (2D)
             Vector2 position = CalculateQuadraticBezier2D(start, controlPoint, end, t);
             transform.position = new Vector3(position.x, position.y, transform.position.z);
 
-            // Xoay cá theo hướng di chuyển (chỉ xoay trục Z trong 2D)
+            // Xoay cá theo hướng di chuyển
             Vector2 direction = (position - prevPosition).normalized;
             if (direction != Vector2.zero)
             {
@@ -127,29 +120,44 @@ public class FishMoving
         // Đảm bảo cá đến đúng điểm cuối
         Vector2 finalPos = end;
         transform.position = new Vector3(finalPos.x, finalPos.y, transform.position.z);
+        Vector2 directionToNext = (sinkPos - finalPos).normalized;
+        if (directionToNext != Vector2.zero)
+        {
+            float smoothAngle = Mathf.Atan2(directionToNext.y, directionToNext.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, smoothAngle);
+        }
     }
 
     /// <summary>
-    /// Easing function mô phỏng chuyển động thực tế mượt mà:
-    /// - Nhanh ở đầu (tăng tốc)
-    /// - Chậm nhất ở đỉnh (nhưng vẫn có chuyển động)
-    /// - Nhanh dần khi rơi xuống (tăng tốc do trọng lực)
+    /// Easing function để cá ở đỉnh lâu hơn:
+    /// - Nhanh ở đầu (lên nhanh)
+    /// - Chậm ở giữa/đỉnh (ở đỉnh lâu hơn)
+    /// - Nhanh ở cuối (rơi nhanh)
     /// </summary>
     private float ApplyJumpEasing(float t)
     {
-        // Sử dụng hàm sine để tạo chuyển động mượt mà liên tục
-        // Đường cong này không bao giờ có đạo hàm = 0 (không dừng hẳn)
+        // PHƯƠNG PHÁP 1: Custom easing với "plateau" ở giữa (KHUYÊN DÙNG)
+        // Tạo vùng chậm rõ rệt ở khoảng t = 0.4 đến 0.6
+        if (t < 0.5f)
+        {
+            // Nửa đầu: tăng tốc rồi chậm lại khi gần đỉnh
+            float localT = t / 0.5f; // Chuẩn hóa về [0,1]
+            return 0.5f * Mathf.Pow(localT, 1.5f); // Tăng nhanh đầu, chậm dần
+        }
+        else
+        {
+            // Nửa sau: chậm khi rời đỉnh, tăng tốc khi rơi xuống
+            float localT = (t - 0.5f) / 0.5f; // Chuẩn hóa về [0,1]
+            return 0.5f + 0.5f * Mathf.Pow(localT, 0.67f); // Chậm đầu, nhanh dần
+        }
 
-        // Phương pháp 1: Sine-based easing (mượt nhất)
-        // return t - Mathf.Sin(t * Mathf.PI * 2f) / (Mathf.PI * 2f);
+        // PHƯƠNG PHÁP 2: Sine-based với điều chỉnh (tùy chọn)
+        // Uncomment dòng dưới nếu muốn dùng
+        // return t - 0.15f * Mathf.Sin(t * Mathf.PI * 2f) / (Mathf.PI * 2f);
 
-        // Phương pháp 2: Smoothstep với điều chỉnh (cân bằng giữa mượt và tự nhiên)
-        // Công thức: 3t² - 2t³ (Smoothstep chuẩn)
-        return t * t * (3f - 2f * t);
-
-        // Phương pháp 3: Custom curve với tốc độ không đổi ở đỉnh
-        // float adjustedT = Mathf.Pow(t, 1.5f);
-        // return adjustedT;
+        // PHƯƠNG PHÁP 3: Polynomial với vùng phẳng ở giữa (tùy chọn)
+        // Uncomment dòng dưới nếu muốn dùng
+        // return Mathf.Pow(t, 2f) * (3f - 2f * t) * (1f - 0.3f * Mathf.Sin(t * Mathf.PI));
     }
 
     /// <summary>
@@ -157,14 +165,13 @@ public class FishMoving
     /// </summary>
     private Vector2 CalculateQuadraticBezier2D(Vector2 p0, Vector2 p1, Vector2 p2, float t)
     {
-        // Công thức: B(t) = (1-t)²P0 + 2(1-t)tP1 + t²P2
         float u = 1 - t;
         float tt = t * t;
         float uu = u * u;
 
-        Vector2 point = uu * p0; // (1-t)² * P0
-        point += 2 * u * t * p1; // 2(1-t)t * P1
-        point += tt * p2; // t² * P2
+        Vector2 point = uu * p0;
+        point += 2 * u * t * p1;
+        point += tt * p2;
 
         return point;
     }

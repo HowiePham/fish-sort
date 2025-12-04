@@ -172,7 +172,7 @@ MonoBehaviour:
   isMoving: 0
   jumpDuration: 0.75
   movingDuration: 0.35
-  jumpHeight: 10
+  jumpHeight: 13
   sinkDepth: 1.5
   sinkDuration: 0.75
   swimUpDuration: 0.5
