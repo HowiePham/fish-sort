@@ -43,7 +43,7 @@ public class LevelFlowHandler : MonoBehaviour
 
 #if UNITY_EDITOR
     [Button]
-    private void GetAllFishHolders()
+    private void GetAllFishTanks()
     {
         this.fishTanks = GetComponentsInChildren<FishTank>();
     }

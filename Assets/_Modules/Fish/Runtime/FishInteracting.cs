@@ -73,6 +73,6 @@ public class FishInteracting : MonoBehaviour
         }
 
         Vector3 fingerPos = finger.GetWorldPosition(10);
-        return this.bounds.Contains(fingerPos);
+        return this.boxCollider.bounds.Contains(fingerPos);
     }
 }

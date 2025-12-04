@@ -118,14 +118,14 @@ public class GameInputHandler : MonoBehaviour
     {
         if (isJump)
         {
-            await this.selectedFish.JumpTo(entryPos, fishHolder);
+            this.selectedFish.JumpTo(entryPos, fishHolder);
         }
         else
         {
-            await this.selectedFish.MoveTo(entryPos, fishHolder);
+            this.selectedFish.MoveTo(entryPos, fishHolder);
         }
 
-        // fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber);
+        fishHolder.OccupyHolder(this.selectedFish.FishTypeNumber);
         this.selectedFish = null;
         this.isDragging = false;
     }

@@ -48,15 +48,26 @@ public class FishTank : MonoBehaviour
 
     public FishHolder SelectFishHolder(LeanFinger finger)
     {
+        var minDistance = float.MaxValue;
+        Vector3 fingerPos = finger.GetWorldPosition(10);
+        FishHolder selectedHolder = null;
+
         foreach (FishHolder holder in this.fishHolders)
         {
-            if (holder.CanInteract(finger))
+            if (!holder.CanInteract(finger))
             {
-                return holder;
+                continue;
+            }
+
+            float distance = Vector3.Distance(fingerPos, holder.transform.position);
+            if (distance < minDistance)
+            {
+                selectedHolder = holder;
+                minDistance = distance;
             }
         }
 
-        return null;
+        return selectedHolder;
     }
 
     public FishHolder OccupyEmptyHolder(int fishType)
